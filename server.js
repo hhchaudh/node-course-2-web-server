@@ -59,13 +59,20 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
-        pageTitle: 'About Page',
+        pageTitle: 'About Page'
     });    // use render, automatically looking in views folder for hbs file
 });
 
 app.get('/bad', (req, res) => {
     res.send({
         error: 'Unable to fulfill this request'
+    });
+});
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects page',
+        welcomeMessage: 'Hi, this is my portfolio page'
     });
 });
 
