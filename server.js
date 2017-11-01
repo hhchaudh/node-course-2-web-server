@@ -50,7 +50,7 @@ app.get('/', (req, res) => {
     // });
     res.render('home.hbs', {
         pageTitle: 'Home Page',
-        welcomeMessage: 'Hey there mah brah mah!'
+        welcomeMessage: 'Hey there, this is the express server doing stuff :) !'
     });
 });
 
